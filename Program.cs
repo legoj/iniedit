@@ -29,7 +29,7 @@ namespace iniedit
         //static extern int GetPrivateProfileString(string Section, string Key, string Default, StringBuilder RetVal, int Size, string FilePath);
 
         //params: 1=inifilePath 2=action 3=params: section propname propval
-        //sample c:\temp\test.ini /add section:name=value 
+        //sample c:\temp\test.ini /a section:name=value 
 
         static int Main(string[] args)
         {
@@ -139,7 +139,7 @@ namespace iniedit
             Print("    Delete a whole section.");
             Print("     /d [sectionName]");
             Print(" behaviorFlag - either of the following:");
-            Print("    /y - If file does not exist, /add will create new ini file; /del is ignored.");
+            Print("    /y - If file does not exist, /a will create new ini file; /d is ignored.");
             Print("         if not specified, return an error code -1 if file does not exist.");
 
         }
